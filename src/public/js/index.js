@@ -1,6 +1,7 @@
 // import "../css/index.css";
 // import "the-new-css-reset";
-import "../css/index.less";
+// import "../css/index.less";
+import "../css/index.scss";
 
 console.log("index.js");
 
