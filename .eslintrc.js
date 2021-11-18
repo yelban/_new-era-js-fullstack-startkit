@@ -25,6 +25,7 @@ module.exports = {
     "max-len": ["warn", { code: 100 }],
     "linebreak-style": ["error", (process.platform === "win32" ? "windows" : "unix")],
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "import/prefer-default-export": "off",
   },
   overrides: [
     {
