@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "New Era JavaScript Full Stack Starter Kit",
   "source": "src/public/index.html",
+  "browserslist": [
+    "last 3 versions"
+  ],
   "scripts": {
     "start": "parcel --open",
     "build": "parcel build"
@@ -22,10 +25,13 @@
     "the-new-css-reset": "^1.4.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-pipeline-operator": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
     "@parcel/transformer-less": "^2.0.1",
     "@parcel/transformer-sass": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
+    "core-js": "^3.19.1",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",

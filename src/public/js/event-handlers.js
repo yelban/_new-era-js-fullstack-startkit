@@ -16,7 +16,8 @@ export function onLoadEventHandler() {
 export function newtodoEventHandler(event) {
   console.log(event);
   let title = event.target.value;
-  title = capitalize(trim(title));
+  // title = capitalize(trim(title));
+  title = title |> trim |> capitalize;
 
   addTodo({
     id: Date.now(),
