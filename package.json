@@ -1,0 +1,32 @@
+{
+  "name": "new-era-js-fullstack-startkit",
+  "version": "1.0.0",
+  "description": "New Era JavaScript Full Stack Starter Kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yelban/new-era-js-fullstack-startkit.git"
+  },
+  "keywords": [],
+  "author": "Yelban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yelban/new-era-js-fullstack-startkit/issues"
+  },
+  "homepage": "https://github.com/yelban/new-era-js-fullstack-startkit#readme",
+  "dependencies": {
+    "the-new-css-reset": "^1.4.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "stylelint-config-standard-scss": "^2.0.1",
+    "stylelint-order": "^5.0.0"
+  }
+}
