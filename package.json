@@ -2,9 +2,10 @@
   "name": "new-era-js-fullstack-startkit",
   "version": "1.0.0",
   "description": "New Era JavaScript Full Stack Starter Kit",
-  "main": "index.js",
+  "source": "src/public/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel --open",
+    "build": "parcel build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.3",
+    "parcel": "^2.0.1",
     "stylelint-config-standard-scss": "^2.0.1",
     "stylelint-order": "^5.0.0"
   }
