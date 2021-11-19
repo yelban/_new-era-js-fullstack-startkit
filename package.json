@@ -25,6 +25,7 @@
     "the-new-css-reset": "^1.4.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
     "@babel/plugin-proposal-pipeline-operator": "^7.16.0",
     "@babel/preset-env": "^7.16.4",
     "@parcel/transformer-less": "^2.0.1",
