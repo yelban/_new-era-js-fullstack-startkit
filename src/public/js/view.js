@@ -1,5 +1,3 @@
-import DeleteImage from "../assets/pic/delete.png";
-
 export function renderTodos(todos) {
   const arrRenderItem = todos.map((todo) => {
     const classStatus = todo.done ? "done" : "";
@@ -7,7 +5,7 @@ export function renderTodos(todos) {
         <li data-id="${todo.id}" class="${classStatus}">
           <span class="custom-checkbox"></span>
           <label>${todo.title}</label>
-          <img src="${DeleteImage}" class="delete" width="30" height="30" />
+          <span class="delete"></span>
         </li>
       `;
   });
