@@ -1,9 +1,14 @@
 export function renderTodos(todos) {
   const arrRenderItem = todos.map((todo) => {
     const classStatus = todo.done ? "done" : "";
+    const completionClass = todo.done ? "checked" : "";
+
     return `
         <li data-id="${todo.id}" class="${classStatus}">
-          <span class="custom-checkbox"></span>
+          <span class="custom-checkbox">
+            <i class="fas fa-check"></i>
+            <input class="real-checkbox" type="checkbox" ${completionClass} />
+          </span>
           <label>${todo.title}</label>
           <span class="delete"></span>
         </li>

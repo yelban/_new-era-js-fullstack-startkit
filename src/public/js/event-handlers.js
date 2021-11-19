@@ -1,5 +1,7 @@
 import { renderTodos, clearNewTodoInput, getTodoId } from "./view";
-import { getAllTodos, addTodo, deleteTodo } from "./data";
+import {
+  getAllTodos, addTodo, deleteTodo, updateTodo,
+} from "./data";
 
 function trim(value) {
   return value.trim();
@@ -31,6 +33,13 @@ function attachTodoEvent() {
     el.removeEventListener("click", removeTodoEventHandler);
     el.addEventListener("click", removeTodoEventHandler);
   });
+
+  const arrCheckBoxClass = document.getElementsByClassName("real-checkbox");
+  console.log("arrCheckBoxClass", arrCheckBoxClass);
+  Array.from(arrCheckBoxClass).forEach((el) => {
+    el.removeEventListener("click", toggleTodoEventListener);
+    el.addEventListener("click", toggleTodoEventListener);
+  });
 }
 
 export function onLoadEventHandler() {
@@ -53,4 +62,12 @@ export function newtodoEventHandler(event) {
   renderTodos(getAllTodos());
   attachTodoEvent();
   clearNewTodoInput();
+}
+
+function toggleTodoEventListener(event) {
+  const id = getTodoId(event.target);
+  const isDone = event.target.checked;
+  updateTodo(id, isDone);
+  renderTodos(getAllTodos());
+  attachTodoEvent();
 }

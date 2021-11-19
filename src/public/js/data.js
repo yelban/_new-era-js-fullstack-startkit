@@ -13,3 +13,8 @@ export function addTodo(todo) {
 export function deleteTodo(id) {
   data = data.filter((item) => item.id !== id);
 }
+
+export function updateTodo(id, done) {
+  const itemIndex = data.findIndex((value) => value.id === id);
+  data[itemIndex].done = done;
+}
