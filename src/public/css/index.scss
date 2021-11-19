@@ -7,6 +7,12 @@ body {
   color: #505050;
   background-color: #F5F5F5;
 
+  .header-image {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+
   h1 {
     font-size: 60px;
     font-weight: 200;
@@ -57,6 +63,18 @@ body {
           padding: 15px;
 
           /* border: 1px solid gray; */
+        }
+
+        .delete {
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+          visibility: hidden;
+          cursor: pointer;
+        }
+
+        &:hover .delete {
+          visibility: visible;
         }
       }
     }

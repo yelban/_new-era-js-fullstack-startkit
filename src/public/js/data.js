@@ -1,6 +1,6 @@
 import todos from "./todo.json";
 
-const data = todos;
+let data = todos;
 
 export function getAllTodos() {
   return data;
@@ -8,4 +8,8 @@ export function getAllTodos() {
 
 export function addTodo(todo) {
   data.push(todo);
+}
+
+export function deleteTodo(id) {
+  data = data.filter((item) => item.id !== id);
 }
