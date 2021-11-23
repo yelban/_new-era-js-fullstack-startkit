@@ -48,6 +48,9 @@ body {
 
         .custom-checkbox {
           position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           margin-left: 15px;
           width: 30px;
           height: 30px;
