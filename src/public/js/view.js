@@ -24,3 +24,17 @@ export function clearNewTodoInput() {
 export function getTodoId(el) {
   return parseInt(el.dataset.id || el.parentNode.dataset.id || el.parentNode.parentNode.dataset.id, 10);
 }
+
+export function showAlert(text) {
+  console.log("showAlert", showAlert);
+
+  const alertEl = document.createElement("div");
+  alertEl.classList.add("alert", "alert-success");
+  alertEl.setAttribute("role", "alert");
+  alertEl.innerHTML = text;
+  document.body.appendChild(alertEl);
+
+  setTimeout(() => {
+    alertEl.parentNode.removeChild(alertEl);
+  }, 2500);
+}

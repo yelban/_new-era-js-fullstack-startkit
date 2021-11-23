@@ -1,4 +1,6 @@
-import { renderTodos, clearNewTodoInput, getTodoId } from "./view";
+import {
+  renderTodos, clearNewTodoInput, getTodoId, showAlert,
+} from "./view";
 import {
   getAllTodos, addTodo, deleteTodo, updateTodo,
 } from "./data";
@@ -62,6 +64,7 @@ export function newtodoEventHandler(event) {
   renderTodos(getAllTodos());
   attachTodoEvent();
   clearNewTodoInput();
+  showAlert("Todo has been created successfully!");
 }
 
 function toggleTodoEventListener(event) {
